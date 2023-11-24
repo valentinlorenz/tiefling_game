@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c13e46bxx1f6p"]
+
+[ext_resource type="Texture2D" uid="uid://xxknvafq0115" path="res://art/Player_Char/Idle.png" id="1_ki8sy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6v5gc"]
+size = Vector2(18, 63)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-62, 10.5)
+shape = SubResource("RectangleShape2D_6v5gc")
+
+[node name="Idle" type="Sprite2D" parent="."]
+position = Vector2(-48, -21)
+texture = ExtResource("1_ki8sy")
+hframes = 7
